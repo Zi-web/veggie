@@ -1,0 +1,41 @@
+@import "variables.less";
+@import "mixins.less";
+@import "normalize.less";
+.offer {
+	width: 100%;
+	height: auto;
+	background-image: url("../img/bg-offer2.png");
+	background-repeat: repeat;
+}
+
+.offer__wrapper {
+	.container();
+}
+
+.offer__icons {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.offer__icon {
+		width: 380px;
+		color: @color-link;
+		figcaption {
+		h4 {
+			text-transform: uppercase;
+			font-family: 'merriweatherbold', Helvetica, Arial, sans-serif;
+    		font-size: 18px;
+		};
+		p {
+			font-family: 'merriweatherlight', Helvetica, Arial, sans-serif;
+    		font-size: 16px;
+		}
+	}
+}
+
+
+

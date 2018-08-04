@@ -1,0 +1,76 @@
+@import "variables.less";
+@import "mixins.less";
+@import "normalize.less";
+.contact {
+	margin-left: auto; 
+	width: 50%;
+	text-align: center;
+	.h2();
+}
+
+.contact__wrapper { 
+	display: flex;
+	text-align: left;
+	align-items: baseline;
+}
+
+
+.contact__column {
+	width: 220px;
+	margin: auto;
+	font-family: 'merriweatherregular', Helvetica, Arial, sans-serif;
+	h4 {
+		text-transform: uppercase;
+		font-size: 18px;
+	}
+	span {
+		font-size: 16px;
+		a {
+			text-decoration: none;
+		}
+	}
+}
+
+.contact__form {
+	margin-top: 80px;
+	margin-bottom: 80px;
+	display: flex;
+	flex-wrap: wrap;
+	legend {
+		font-family: 'merriweatherregular', Helvetica, Arial, sans-serif;
+		font-size: 18px;
+		text-transform: uppercase;
+		text-align: left;
+		width: 100%;
+	}
+	input[type="text"],
+	input[type="email"] {
+		font-family: 'merriweatheritalic', Helvetica, Arial, sans-serif;
+		font-size: 18px;
+		border: none;
+		background: transparent;
+		border-bottom: 1px solid @color-link;
+		margin: 5px;
+		padding-left: 10px;
+		padding-top: 50px;
+		margin: auto;
+	};
+	.contact__message {
+		flex-basis: 100%;
+	}
+	button {
+		font-family: 'merriweatherregular', Helvetica, Arial, sans-serif;
+		font-size: 18px;
+		width: 100px;
+		height: 50px;
+		border: 1px solid @color-link;
+		background: transparent;
+		padding: 15px 20px;
+		margin: 50px auto 150px;
+		&:hover {
+			cursor: pointer;
+			background-color: @color-white;
+			box-shadow: 0 0 10px rgba(0,0,0,0.5);
+		}
+	}
+}

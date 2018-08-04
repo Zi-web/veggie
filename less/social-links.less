@@ -1,0 +1,38 @@
+@import "variables.less";
+@import "mixins.less";
+@import "normalize.less";
+.social-links {
+	display: flex;
+	width: 48px;
+	height: 48px;
+	margin-right: 25px;
+}
+
+.social-link {
+	box-sizing: border-box;
+	text-indent: 100%; /*Скрывает текст*/
+	white-space: nowrap;
+    overflow: hidden;
+	margin-right: 15px;
+	border: 1px solid @color-link;
+}
+
+.social-link--fb {
+	background: url("../img/fb.png") no-repeat;
+	background-position: center;
+	padding: 20px;
+	&:hover {
+		background-color: @color-white;
+		box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	}
+}
+
+.social-link--in {
+	background: url("../img/in.png") no-repeat;
+	background-position: center;
+	padding: 20px;
+	&:hover {
+		background-color: @color-white;
+		box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	}
+}

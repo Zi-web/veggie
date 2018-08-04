@@ -1,0 +1,42 @@
+@import "variables.less";
+@import "mixins.less";
+@import "normalize.less";
+.main-nav {
+}
+
+.main-nav__items {
+	display: flex;
+}
+
+.main-nav__item:first-child {
+	margin-left: auto;
+}
+
+.main-nav__item {
+	list-style: none;
+  a {
+  	font-family: 'merriweatherregular', Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    display: block;
+    overflow: hidden;
+    color: @color-link;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px;
+    border: 1px solid transparent;
+  };
+  a:active, a:hover {
+  	padding: 15px;
+  	border: 1px solid @color-link;
+  }
+}
+
+.main-nav__promo-text {
+    width: 540px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+   	margin-left: auto;
+    text-align: center;
+    .h2();
+}
+

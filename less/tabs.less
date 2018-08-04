@@ -1,0 +1,70 @@
+@import "variables.less";
+@import "mixins.less";
+@import "normalize.less";
+.tabs__post {
+	display: none;
+}
+
+.tabs__post.active {
+	display: block;
+}
+
+.tabs__items {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabs__item {
+	font-family: 'merriweatherregular', Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	cursor: pointer;
+	list-style: none;
+    text-transform: uppercase;
+    color: @color-link;
+   	padding: 15px 20px;
+    border: 1px solid transparent;
+}
+
+.tabs__item:hover,
+.tabs__item.active {
+	padding: 15px 20px;
+  	border: 1px solid @color-link;
+}
+
+.tabs__post-wrapper {
+	display: flex;
+	margin-top: 70px;
+	flex-wrap: wrap;
+}
+
+.tabs__table {
+	width: 45%;
+	text-align: left;
+	padding-bottom: 30px;
+	margin-right: auto; 
+	margin-left: auto;
+	tr {
+		display: flex;
+		align-items: baseline;
+		td {
+  		white-space: nowrap;
+  		align-items: baseline;
+  		padding-right: 0;
+  		padding-bottom: 40px;
+  		font-family: 'merriweatherlight', Helvetica, Arial, sans-serif;
+    	font-size: 18px;
+  		span {
+  			font-family: 'merriweatherlight_italic', Helvetica, Arial, sans-serif;
+    		font-size: 14px;
+  		}
+	}
+	}
+}
+
+.table-dots {
+	border-bottom: 2px dotted black;
+	width: 100%;
+}
