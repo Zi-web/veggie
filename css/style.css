@@ -729,7 +729,8 @@ template {
   display: flex;
   width: 48px;
   height: 48px;
-  margin-right: 25px;
+  margin-right: 50px;
+  margin-bottom: 20px;
 }
 .social-link {
   box-sizing: border-box;
@@ -741,18 +742,16 @@ template {
   border: 1px solid #3c3c3c;
 }
 .social-link--fb {
-  background: url("../img/fb.png") no-repeat;
-  background-position: center;
-  padding: 20px;
+  background: url("../img/fb.png") no-repeat center;
+  padding: 15px 25px;
 }
 .social-link--fb:hover {
   background-color: #ffffff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .social-link--in {
-  background: url("../img/in.png") no-repeat;
-  background-position: center;
-  padding: 20px;
+  background: url("../img/in.png") no-repeat center;
+  padding: 15px 25px;
 }
 .social-link--in:hover {
   background-color: #ffffff;
