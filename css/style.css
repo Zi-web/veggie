@@ -419,6 +419,10 @@ template {
   padding-left: 30px;
   padding-right: 30px;
 }
+.main-nav__wrapper {
+  display: flex;
+  flex-direction: column;
+}
 .main-nav__items {
   display: flex;
 }
@@ -448,6 +452,7 @@ template {
   width: 540px;
   padding-top: 200px;
   padding-bottom: 200px;
+  justify-content: center;
   margin-left: auto;
   text-align: center;
 }
@@ -605,8 +610,9 @@ template {
 .about__img {
   flex-basis: 55%;
   background-image: url("../img/about-img.png");
-  width: 984px;
-  height: 909px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 .menu {
   text-align: center;
@@ -632,6 +638,7 @@ template {
   background-image: url("../img/bg-footer.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position-x: right;
 }
 .page-footer__wrapper {
   display: flex;
@@ -702,10 +709,15 @@ template {
   border: none;
   background: transparent;
   border-bottom: 1px solid #3c3c3c;
+  outline: none;
   margin: 5px;
   padding-left: 10px;
   padding-top: 50px;
   margin: auto;
+}
+.contact__form input[type="text"]:active,
+.contact__form input[type="email"]:active {
+  border: 1px solid transparent;
 }
 .contact__form .contact__message {
   flex-basis: 100%;
